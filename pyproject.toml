@@ -1,0 +1,25 @@
+[project]
+name = "meeting-auto-skill"
+version = "0.1.0"
+description = "Reusable Codex Skill and Python workflow for meeting transcription, minutes generation, meeting RAG QA and archival export."
+requires-python = ">=3.10"
+dependencies = [
+  "python-dotenv>=1.0",
+  "pydantic>=2.7",
+  "pydantic-settings>=2.2",
+  "typer>=0.12",
+  "rich>=13.7",
+  "requests>=2.31",
+  "numpy>=1.26",
+  "scikit-learn>=1.4",
+  "sounddevice>=0.4.6",
+  "soundfile>=0.12.1",
+  "openai-whisper>=20231117"
+]
+
+[project.scripts]
+meeting-skill = "meeting_skill.cli:app"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,23 @@
+providers:
+  chat:
+    mock: local mock response
+    deepseek: OpenAI-compatible chat completions
+    glm: OpenAI-compatible GLM chat completions
+  speech:
+    mock: parse explicit .txt/.md input only; audio returns empty when no speech model is configured
+    whisper-local: local Whisper model
+    openai-compatible: OpenAI-compatible audio transcription endpoint
+pipeline:
+  cache_flush_seconds: 5
+  summary_chunk_chars: 7000
+  rag_chunk_chars: 900
+  rag_chunk_overlap: 120
+  rag_top_k: 5
+exports:
+  archive_dir: archives
+  files:
+    - transcript.md
+    - transcript.jsonl
+    - minutes.md
+    - todos.csv
+    - qa_history.jsonl
