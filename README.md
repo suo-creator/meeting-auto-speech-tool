@@ -1,3 +1,15 @@
+# 会议自动语音工具
+基于Whisper实现本地会议录音转文字桌面工具
+
+## 中文部署教程
+1. 克隆代码仓库
+git clone https://github.com/suo-creator/meeting-auto-speech-tool.git
+2. 环境配置
+将 env.example 复制一份，重命名为 .env，填入你的API密钥
+3. 安装依赖
+pip install -r requirements.txt
+4. 启动程序
+直接运行 app_gui.py，也可使用pyinstaller打包成exe独立程序
 # Meeting Auto Skill
 
 This project provides a reusable Codex Skill plus a local Python workflow for meeting transcription, Markdown minutes generation, temporary meeting RAG QA, and archive export.
