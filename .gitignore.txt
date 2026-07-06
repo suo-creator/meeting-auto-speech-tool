@@ -1,0 +1,24 @@
+# 虚拟环境
+.venv/
+venv/
+
+# 打包文件
+build/
+dist/
+*.spec
+
+# 临时缓存
+__pycache__/
+.local/
+*.pyc
+
+# 运行录音缓存
+data/
+*.wav
+*.json
+
+# 密钥
+.env
+
+# 系统文件
+Thumbs.db
