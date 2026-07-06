@@ -1,0 +1,22 @@
+# 虚拟环境
+.venv/
+venv/
+
+# 打包产物
+build/
+dist/
+*.spec
+
+# 缓存、音频数据
+__pycache__/
+.local/
+data/
+*.wav
+*.pyc
+
+# 密钥配置
+.env
+
+# 系统垃圾文件
+Thumbs.db
+.DS_Store
